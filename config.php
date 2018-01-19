@@ -2,7 +2,7 @@
 /********************************************
 CONFIGURAZIONE DEL TEMA
 ********************************************/
-global $color_scheme, $font_scheme, $display_logo, $socials, $home_rows, $page_rows, $newsarchive_rows, $news_rows, $shoparchive_rows, $shop_rows, $cart_rows, $topbar_row, $header_rows, $footer_rows;
+global $color_scheme, $font_scheme, $display_logo, $socials, $home_rows, $page_rows, $newsarchive_rows, $news_rows, $private_rows, $shoparchive_rows, $shop_rows, $cart_rows, $topbar_row, $header_rows, $footer_rows;
 
 
 /*
@@ -69,6 +69,9 @@ Moduli disponibili:
  "customfield[nome del campo]" -> shop: campo personalizzato. Tra parentesi quadre il nome del campo da mettere
  
  "banner[(string)]" -> i banner nella categoria indicata tra parentesi quadra
+ 
+ "login" -> login form or current user badge
+ "private" -> file e cartelle privati
  
  "logo" -> mostra il logo, linkato all'home page
  "empty" -> vuoto :-)
@@ -148,6 +151,19 @@ cosa mostrare in ogni colonna della pagina dell'archivio delle news?
 
 $newsarchive_rows = array();
 $newsarchive_rows[] = "12 newslist";
+
+
+
+/********************************************
+PAGINE RISERVATE
+********************************************/
+
+/*
+cosa mostrare in ogni colonna delle pagine riservate?
+*/
+
+$private_rows = array();
+$private_rows[] = "2 login, 10 private";
 
 
 /********************************************
